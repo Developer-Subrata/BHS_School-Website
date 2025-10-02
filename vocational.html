@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Bhagwangola Government High School - Empowering students with quality education from Class V to XII">
+
+  <title>Bhagwangola High School | Quality Education Since 1949</title>
+
+  <!-- Icons & Fonts -->
+  <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* =========================
+     HERO HEADER
+    ========================== */
+    .header{
+      min-height:50vh;
+      display:grid;
+      place-items:center;
+      background:
+        linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+        url('images/schoolbg.jpeg') center/cover no-repeat;
+      text-align:center;
+      color:#fff;
+    }
+    .hero{
+      max-width:840px;
+      padding:20px;
+      animation:fadeUp .8s ease both;
+    }
+    .hero h1{font-size:clamp(2rem,5vw,3.5rem); line-height:1.15; margin-bottom:12px}
+    .hero p{font-size:clamp(1rem,2.2vw,1.2rem); opacity:.95; margin-bottom:26px}
+    .btn{
+      display:inline-block; padding:12px 30px; border-radius:999px;
+      font-weight:600; letter-spacing:.5px; transition:all .3s ease; cursor:pointer
+    }
+    .btn-primary{background:#facc15; color:#1b1b1b}
+    .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 20px rgba(0,0,0,.12)}
+    .btn-outline{border:2px solid #fff; color:#fff; background:transparent}
+    .btn-outline:hover{background:#fff; color:#000}
+
+    @keyframes fadeUp{from{opacity:0; transform:translateY(12px)}to{opacity:1; transform:translateY(0)}}
+
+    /* ================
+       Academics cards
+    ================= */
+    .stream-row{display:grid; grid-template-columns:repeat(auto-fit,minmax(320px,1fr)); gap:22px; margin-top:28px}
+    .stream-card{background:#f9f9f9; border-radius:12px; overflow:hidden; box-shadow:0 6px 20px rgba(0,0,0,.08)}
+    .stream-card img{width:100%; aspect-ratio:16/9; object-fit:cover}
+    .stream-card .content{padding:18px}
+    .stream-card h3{margin:8px 0 12px; font-size:1.25rem}
+    .stream-card p{margin:0 0 12px; color:#444}
+    .stream-card ul{margin:0; padding-left:20px}
+    .stream-card li{margin:6px 0}
+  </style>
+</head>
+
+<body>
+  <!-- =========================
+       NAV + HERO
+  ========================== -->
+  <header class="header" id="home">
+    <nav id="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html">
+        <img src="images/LOGO.png" alt="Bhagwangola Government High School Logo">
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="./INDEX.HTML">Home</a></li>
+          <li><a href="./INDEX.HTML">Academics</a></li>
+          <li><a href="./INDEX.HTML">Facilities</a></li>
+          <li><a href="./INDEX.HTML">Principal</a></li>
+          <li><a href="./INDEX.HTML">Notices</a></li>
+          <li><a href="./INDEX.HTML">Events</a></li>
+          <li><a href="./INDEX.HTML">Gallery</a></li>
+          <li><a href="./INDEX.HTML">Contact</a></li>
+        </ul>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
+
+    <div class="container hero">
+      <h1>Bhagagangola High School (H.S)</h1>
+      <p>Empowering students from Class V to Class XII with quality education since 1949</p>
+      <a href="#admissions" class="btn btn-primary">Admissions 2025–26</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================
+         ACADEMICS
+    ========================== -->
+    <section id="academics" aria-labelledby="academics-title">
+      <div class="container">
+        <h2 id="academics-title">Vocational Education</h2>
+        <p>Offered under the West Bengal State Council of Technical & Vocational Education and Skill Development (WBSCTVESD)</p>
+
+        <div class="stream-row">
+          <!-- Computer Applications / Science -->
+          <div class="stream-card">
+            <img src="./images/com.jpg" alt="Computer keyboard with code">
+            <div class="content">
+              <h3>Computer Applications &amp; Science</h3>
+              <p>Basic programming, digital tools, and IT operations with hands-on labs.</p>
+              <ul>
+                <li>Programming fundamentals (Python / C / JavaScript)</li>
+                <li>Databases, web development, and version control (Git)</li>
+                <li>Operating systems, networking, and cybersecurity basics</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Electrical Engineering -->
+          <div class="stream-card">
+            <img src="./images/elec.webp" alt="Technician with circuit board">
+            <div class="content">
+              <h3>Electrical Engineering (Diploma)</h3>
+              <p>Core theory and lab practice for power, electronics and industrial control.</p>
+              <ul>
+                <li>DC/AC circuits, machines, transformers & power systems</li>
+                <li>Analog/digital electronics, PCB prototyping & testing</li>
+                <li>PLC, sensors, industrial safety & maintenance</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Civil Engineering -->
+          <div class="stream-card">
+            <img src="./images/civil.jpeg" alt="Bridge construction site">
+            <div class="content">
+              <h3>Civil Engineering (Diploma)</h3>
+              <p>Site-ready skills for structures, surveying, materials and project control.</p>
+              <ul>
+                <li>Construction materials & testing (concrete, steel, soils)</li>
+                <li>AutoCAD drafting, leveling & total-station surveying</li>
+                <li>Estimation, BOQ, contracts & site safety management</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Automobile Engineering -->
+          <div class="stream-card">
+            <img src="./images/auto.jpg" alt="Car assembly line">
+            <div class="content">
+              <h3>Automobile Engineering (Diploma)</h3>
+              <p>Design, manufacturing and maintenance of vehicles with strong workshop practice.</p>
+              <ul>
+                <li>Engine systems, transmission, braking & EV fundamentals</li>
+                <li>AutoCAD/CAE basics, metrology & quality control</li>
+                <li>Workshop: diagnosis, service & overhauling</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <p style="margin-top:24px">Each course includes both academic and hands-on training, with assessments conducted by WBSCTVESD. Successful candidates receive a recognized Higher Secondary (Vocational) certificate.</p>
+
+        <a href="https://sctvesd.wb.gov.in/" class="btn btn-outline" target="_blank" rel="noopener">Learn More at WBSCTVESD</a>
+      </div>
+    </section>
+
+    <!-- =========================
+         CTA
+    ========================== -->
+    <section id="admissions" class="container">
+      <div class="cta" role="complementary" aria-label="Admissions call to action">
+        <h2>Admissions Open for 2025–26 Academic Session</h2>
+        <p>Join us for strong academics, caring mentorship, and opportunities in sports & culture. Limited seats for Classes V–XII.</p>
+        <a href="#contact" class="btn btn-outline">Contact Us Today</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer id="contact" class="footer">
+    <div class="container footer-grid">
+      <div>
+        <h3>About Us</h3>
+        <p>Since 1949, Bhagwangola Government High School has nurtured young minds through academic excellence, values, and community spirit.</p>
+        <div class="social">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="X (Twitter)"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Bhagwangola, Murshidabad, WB 742135</p>
+        <p><i class="fas fa-phone"></i> +91 1234567890</p>
+        <p><i class="fas fa-envelope"></i> info@bhagwangolahighschool.edu.in</p>
+        <p><i class="fas fa-clock"></i> Office Hours: 10:00 AM – 4:00 PM (Mon–Sat)</p>
+      </div>
+
+      <div>
+        <h3>Send us a Message</h3>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.'); this.reset();">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" rows="3" placeholder="Your Message" required></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <p>&copy; 2025 Bhagabangola Government High School. All Rights Reserved.</p>
+        <p>Designed with pride by the Bhagwangola Education Committee</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================
+       SCRIPTS
+  ========================== -->
+  <script>
+    const navbar     = document.getElementById('navbar');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks   = document.getElementById('navLinks');
+
+    // Sticky navbar
+    const setNavScrolled = () => {
+      if (window.scrollY > 80) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    };
+    setNavScrolled();
+    window.addEventListener('scroll', setNavScrolled);
+
+    // Mobile menu toggle
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', isOpen);
+      menuToggle.firstElementChild.classList.toggle('fa-bars');
+      menuToggle.firstElementChild.classList.toggle('fa-xmark');
+    });
+
+    // Close menu on link click
+    document.querySelectorAll('#navLinks a').forEach(a => {
+      a.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.firstElementChild.classList.add('fa-bars');
+          menuToggle.firstElementChild.classList.remove('fa-xmark');
+        }
+      });
+    });
+
+    // Smooth scroll with offset
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e){
+        const id = this.getAttribute('href');
+        if (!id || id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+
+        e.preventDefault();
+        const y = target.getBoundingClientRect().top + window.scrollY - 90;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>

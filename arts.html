@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Bhagwangola Government High School - Empowering students with quality education from Class V to XII">
+
+  <title>Bhagabangola High School | Quality Education Since 1949</title>
+
+  <!-- Icons & Fonts -->
+   <link rel="stylesheet" href="index.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<style>
+    /* =========================
+     HERO HEADER
+  ========================== */
+  .header{
+    min-height:50vh;
+    display:grid; place-items:center;
+    background:
+      linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+      url('images/schoolbg.jpeg') center/cover no-repeat;
+    text-align:center; color:var(--white); position:relative;
+  }
+  .hero{
+    max-width:840px; padding:20px;
+    animation:fadeUp .8s ease both;
+  }
+  .hero h1{font-size:clamp(2rem,5vw,3.5rem); line-height:1.15; margin-bottom:12px}
+  .hero p{font-size:clamp(1rem,2.2vw,1.2rem); opacity:.95; margin-bottom:26px}
+  .btn{
+    display:inline-block; padding:12px 30px; border-radius:999px;
+    font-weight:600; letter-spacing:.5px; transition:var(--transition); cursor:pointer
+  }
+  .btn-primary{background:var(--secondary); color:#1b1b1b}
+  .btn-primary:hover{transform:translateY(-2px); box-shadow:0 10px 20px rgba(0,0,0,.12)}
+  .btn-outline{border:2px solid var(--white); color:var(--black); background:transparent}
+  .btn-outline:hover{background:var(--white); color:var(--accent)}
+
+  @keyframes fadeUp{from{opacity:0; transform:translateY(12px)}to{opacity:1; transform:translateY(0)}}
+
+  
+</style>
+</head>
+
+<body>
+  <!-- =========================
+       NAV + HERO
+  ========================== -->
+  <header class="header" id="home" aria-label="School header with hero image">
+    <nav id="navbar" aria-label="Main navigation">
+      <a class="logo" href="index.html" aria-label="School Home">
+        <img src="images/LOGO.png" alt="Bhagwangola Government High School Logo">
+      </a>
+
+      <div class="nav-links" id="navLinks">
+        <ul>
+          <li><a href="./INDEX.HTML">Home</a></li>
+          <li><a href="./INDEX.HTML">Academics</a></li>
+          <li><a href="./INDEX.HTML">Facilities</a></li>
+          <li><a href="./INDEX.HTML">Principal</a></li>
+          <li><a href="./INDEX.HTML">Notices</a></li>
+          <li><a href="./INDEX.HTML">Events</a></li>
+          <li><a href="./INDEX.HTML">Gallery</a></li>
+          <li><a href="./INDEX.HTML">Contact</a></li>
+        </ul>
+      </div>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">
+        <i class="fa fa-bars"></i>
+      </button>
+    </nav>
+
+    <div class="container hero">
+      <h1>Bhagabangola High School</h1>
+      <p>Empowering students from Class V to Class XII with quality education since 1949</p>
+      <a href="#admissions" class="btn btn-primary">Admissions 2025–26</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- =========================
+         ACADEMICS
+    ========================== -->
+<section id="academics" aria-labelledby="academics-title">
+  <div class="container">
+    <h2 class="section-title" id="academics-title">Arts Stream</h2>
+    <p class="section-subtitle">Affiliated to the West Bengal Council of Higher Secondary Education (WBCHSE)</p>
+
+    <div class="stream-row">
+      <div class="stream-col">
+        <article>
+          <h3>Higher Secondary Arts Education</h3>
+          <p>
+            The Arts stream at Bhagabangola Government High School is designed to nurture creativity, critical thinking, and cultural awareness. It follows the curriculum prescribed by the <strong>West Bengal Council of Higher Secondary Education (WBCHSE)</strong> for Classes XI and XII.
+          </p>
+
+          <ul>
+            <li><strong>Core Subjects:</strong> Bengali, English</li>
+            <li><strong>Electives:</strong> History, Geography, Political Science, Philosophy, Education, Sanskrit</li>
+            <li><strong>New Subjects (2025–26):</strong> Basic Mathematics for Social Sciences (BMSS)</li>
+          </ul>
+
+          <p>
+            Students gain in-depth understanding of society, culture, politics, and human values. The curriculum also supports preparation for competitive exams and higher studies in humanities, law, education, civil services, and more.
+          </p>
+
+          <p>
+            Assessment includes internal evaluation, project work, and annual WBCHSE board exams. Regular classes, debates, essay writing, and field activities enhance the overall learning experience.
+          </p>
+
+          <a href="https://wbchse.wb.gov.in/" class="btn btn-outline" target="_blank" rel="noopener">Visit WBCHSE Official Website</a>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    <!-- =========================
+         CTA
+    ========================== -->
+    <section id="admissions" class="container">
+      <div class="cta" role="complementary" aria-label="Admissions call to action">
+        <h2>Admissions Open for 2025–26 Academic Session</h2>
+        <p>Join us for strong academics, caring mentorship, and opportunities in sports & culture. Limited seats for Classes V–XII.</p>
+        <a href="#contact" class="btn btn-outline">Contact Us Today</a>
+      </div>
+    </section>
+  </main>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+  <footer id="contact" class="footer" aria-labelledby="contact-title">
+    <div class="container footer-grid">
+      <div>
+        <h3 id="contact-title">About Us</h3>
+        <p>Since 1952, Bhagabangola Government High School has nurtured young minds through academic excellence, values, and community spirit.</p>
+        <div class="social" aria-label="Social media">
+          <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="#" aria-label="Twitter"><i class="fab fa-x-twitter"></i></a>
+          <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+
+      <div>
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#academics">Academics</a></li>
+          <li><a href="#facilities">Facilities</a></li>
+          <li><a href="#events">Events</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Contact Information</h3>
+        <p><i class="fas fa-map-marker-alt"></i> Bhagwangola, Murshidabad, WB 742135</p>
+        <p><i class="fas fa-phone"></i> +91 1234567890</p>
+        <p><i class="fas fa-envelope"></i> info@bhagwangolahighschool.edu.in</p>
+        <p><i class="fas fa-clock"></i> Office Hours: 10:00 AM – 4:00 PM (Mon–Sat)</p>
+      </div>
+
+      <div>
+        <h3>Send us a Message</h3>
+        <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.'); this.reset();">
+          <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
+          <input type="email" name="email" placeholder="Your Email" required aria-label="Your Email">
+          <textarea name="message" rows="3" placeholder="Your Message" required aria-label="Your Message"></textarea>
+          <button class="btn btn-primary" type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="copyright">
+      <div class="container">
+        <p>&copy; 2025 Bhagwangola Government High School. All Rights Reserved.</p>
+        <p>Designed with pride by the Bhagwangola Education Committee</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- =========================
+       SCRIPTS
+  ========================== -->
+  <script>
+    // Elements
+    const navbar     = document.getElementById('navbar');
+    const menuToggle = document.getElementById('menuToggle');
+    const navLinks   = document.getElementById('navLinks');
+
+    // Sticky/Scrolled navbar style
+    const setNavScrolled = () => {
+      const threshold = 80; // px
+      if (window.scrollY > threshold) {
+        navbar.classList.add('scrolled');
+      } else {
+        navbar.classList.remove('scrolled');
+      }
+    };
+    setNavScrolled();
+    window.addEventListener('scroll', setNavScrolled);
+
+    // Mobile menu toggle
+    menuToggle.addEventListener('click', () => {
+      const isOpen = navLinks.classList.toggle('active');
+      menuToggle.setAttribute('aria-expanded', String(isOpen));
+      menuToggle.firstElementChild.classList.toggle('fa-bars');
+      menuToggle.firstElementChild.classList.toggle('fa-xmark');
+    });
+
+    // Close mobile menu on link click
+    document.querySelectorAll('#navLinks a').forEach(a => {
+      a.addEventListener('click', () => {
+        if (navLinks.classList.contains('active')) {
+          navLinks.classList.remove('active');
+          menuToggle.setAttribute('aria-expanded', 'false');
+          menuToggle.firstElementChild.classList.add('fa-bars');
+          menuToggle.firstElementChild.classList.remove('fa-xmark');
+        }
+      });
+    });
+
+    // Smooth in-page scroll with offset (for older browsers that ignore scroll-padding-top)
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e){
+        const id = this.getAttribute('href');
+        if (!id || id === '#') return;
+        const target = document.querySelector(id);
+        if (!target) return;
+
+        e.preventDefault();
+        const y = target.getBoundingClientRect().top + window.scrollY - 90; // offset for fixed nav
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
