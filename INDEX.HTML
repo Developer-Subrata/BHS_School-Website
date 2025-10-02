@@ -9,11 +9,13 @@
   <title>Bhagabangola High School(H:S) | Quality Education Since 1949</title>
 
   <!-- Icons & Fonts -->
-   <link rel="stylesheet" href="index.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
-  <!-- <style>
+  
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  
+  <style>
   /* =========================
      ROOT + RESET
   ========================== */
@@ -308,7 +310,83 @@
     .logo img{height:42px}
     section{padding:64px 0}
   }
-  </style> -->
+  
+  /* =========================
+     NOTICE MODAL STYLES
+  ========================== */
+  #noticeModal {
+    display: none;
+    position: fixed;
+    z-index: 2000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.7);
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .modal-content {
+    position: relative;
+    background: #fff;
+    padding: 30px;
+    border-radius: 16px;
+    max-width: 520px;
+    width: 92%;
+    box-shadow: 0 15px 30px rgba(0,0,0,.3);
+    border: 4px solid #f9a826;
+    animation: popIn 0.6s ease;
+    text-align: center;
+  }
+  
+  .close-notice {
+    position: absolute;
+    top: 16px;
+    right: 22px;
+    font-size: 28px;
+    font-weight: bold;
+    color: #444;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .close-notice:hover {
+    color: #d32f2f;
+  }
+  
+  .modal-title {
+    margin-bottom: 18px;
+    font-size: 1.8rem;
+    color: #d32f2f;
+    font-weight: bold;
+    text-shadow: 0 0 8px rgba(255,0,0,0.7);
+    animation: blink 1.2s infinite;
+  }
+  
+  .modal-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+  }
+  
+  .modal-list li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    font-size: 1.05rem;
+  }
+  
+  @keyframes blink {
+    0%, 50%, 100% { opacity: 1; }
+    25%, 75% { opacity: 0.4; }
+  }
+  
+  @keyframes popIn {
+    from { opacity: 0; transform: scale(0.8); }
+    to { opacity: 1; transform: scale(1); }
+  }
+  </style>
 </head>
 
 <body>
@@ -340,9 +418,9 @@
     </nav>
 
     <div class="container hero">
-      <h1>Bhagabangola High School</h1>
-      <p>Empowering students from Class V to Class XII with quality education since 1949</p>
-      <a href="#admissions" class="btn btn-primary">Admissions 2025–26</a>
+      <h1 data-aos="fade-up" data-aos-duration="800">Bhagabangola High School</h1>
+      <p data-aos="fade-up" data-aos-duration="800" data-aos-delay="200">Empowering students from Class V to Class XII with quality education since 1949</p>
+      <a href="#admissions" class="btn btn-primary" data-aos="fade-up" data-aos-duration="800" data-aos-delay="400">Admissions 2025–26</a>
     </div>
   </header>
 
@@ -351,45 +429,45 @@
          ACADEMICS
     ========================== -->
     <section id="academics" aria-labelledby="academics-title">
-  <div class="container">
-    <h2 class="section-title" id="academics-title">Academics</h2>
-    <p class="section-subtitle">Classes V–XII across Arts, Science & Vocational streams with a comprehensive, modern curriculum.</p>
+      <div class="container">
+        <h2 class="section-title" id="academics-title" data-aos="fade-up">Academics</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Classes V–XII across Arts, Science & Vocational streams with a comprehensive, modern curriculum.</p>
 
-    <div class="stream-row">
-      <a href="arts.html" class="stream-col">
-        <article>
-          <h3>Arts Stream</h3>
-          <p>History, Political Science, Geography, English, Bengali, Philosophy, Education.</p>
-        </article>
-      </a>
+        <div class="stream-row">
+          <a href="arts.html" class="stream-col" data-aos="fade-up" data-aos-delay="200">
+            <article>
+              <h3>Arts Stream</h3>
+              <p>History, Political Science, Geography, English, Bengali, Philosophy, Education.</p>
+            </article>
+          </a>
 
-      <a href="science.html" class="stream-col">
-        <article>
-          <h3>Science Stream</h3>
-          <p>Physics, Chemistry, Biology, Mathematics, English, Computer Science, Statistics.</p>
-        </article>
-      </a>
+          <a href="science.html" class="stream-col" data-aos="fade-up" data-aos-delay="300">
+            <article>
+              <h3>Science Stream</h3>
+              <p>Physics, Chemistry, Biology, Mathematics, English, Computer Science, Statistics.</p>
+            </article>
+          </a>
 
-      <a href="vocational.html" class="stream-col">
-        <article>
-          <h3>Vocational Courses</h3>
-          <p>Office Management, Retail, Computer Applications, Agriculture, Tourism.</p>
-        </article>
-      </a>
-    </div>
-  </div>
-</section>
+          <a href="vocational.html" class="stream-col" data-aos="fade-up" data-aos-delay="400">
+            <article>
+              <h3>Vocational Courses</h3>
+              <p>Office Management, Retail, Computer Applications, Agriculture, Tourism.</p>
+            </article>
+          </a>
+        </div>
+      </div>
+    </section>
 
     <!-- =========================
          FACILITIES (with photos)
     ========================== -->
     <section id="facilities" aria-labelledby="facilities-title">
       <div class="container">
-        <h2 class="section-title" id="facilities-title">Our Facilities</h2>
-        <p class="section-subtitle">State-of-the-art infrastructure that supports holistic development and experiential learning.</p>
+        <h2 class="section-title" id="facilities-title" data-aos="fade-up">Our Facilities</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">State-of-the-art infrastructure that supports holistic development and experiential learning.</p>
 
         <div class="grid">
-          <article class="facility">
+          <article class="facility" data-aos="fade-up" data-aos-delay="200">
             <img src="images/classroom.jpg" alt="Smart classroom with interactive board">
             <div class="content">
               <h3>Smart Classrooms</h3>
@@ -397,7 +475,7 @@
             </div>
           </article>
 
-          <article class="facility">
+          <article class="facility" data-aos="fade-up" data-aos-delay="300">
             <img src="images/sciencelab.jpg" alt="Well-equipped science laboratory">
             <div class="content">
               <h3>Science Labs</h3>
@@ -405,7 +483,7 @@
             </div>
           </article>
 
-          <article class="facility">
+          <article class="facility" data-aos="fade-up" data-aos-delay="400">
             <img src="images/library.jpg" alt="Library with books and reading area">
             <div class="content">
               <h3>Library & Reading Room</h3>
@@ -413,7 +491,7 @@
             </div>
           </article>
 
-          <article class="facility">
+          <article class="facility" data-aos="fade-up" data-aos-delay="500">
             <img src="images/playground.jpg" alt="Open playground for sports">
             <div class="content">
               <h3>Playground</h3>
@@ -421,7 +499,7 @@
             </div>
           </article>
 
-          <article class="facility">
+          <article class="facility" data-aos="fade-up" data-aos-delay="600">
             <img src="images/meal.jpg" alt="Clean mid-day meal kitchen">
             <div class="content">
               <h3>Mid-Day Meal</h3>
@@ -429,7 +507,7 @@
             </div>
           </article>
 
-          <article class="facility">
+          <article class="facility" data-aos="fade-up" data-aos-delay="700">
             <img src="images/computer.jpg" alt="Computer lab with internet access">
             <div class="content">
               <h3>Computer Education</h3>
@@ -445,12 +523,12 @@
     ========================== -->
     <section id="principal" aria-labelledby="principal-title">
       <div class="container">
-        <h2 class="section-title" id="principal-title">From the Principal’s Desk</h2>
-        <div class="principal-wrap" role="article">
-          <div class="photo">
+        <h2 class="section-title" id="principal-title" data-aos="fade-up">From the Principal's Desk</h2>
+        <div class="principal-wrap" role="article" data-aos="fade-up">
+          <div class="photo" data-aos="zoom-in" data-aos-delay="200">
             <img src="images/principle.png" alt="Principal portrait">
           </div>
-          <div class="copy">
+          <div class="copy" data-aos="fade-left" data-aos-delay="300">
             <h3>MD. NAJMUL HOQUE</h3>
             <p class="role">Principal</p>
             <p>
@@ -467,8 +545,8 @@
     ========================== -->
     <section id="notices" aria-labelledby="notices-title">
       <div class="container">
-        <h2 class="section-title" id="notices-title">Notice Board</h2>
-        <div class="notices">
+        <h2 class="section-title" id="notices-title" data-aos="fade-up">Notice Board</h2>
+        <div class="notices" data-aos="fade-up" data-aos-delay="200">
           <ul>
             <li>📢 Admissions (2025–26) open from <strong>10 Sept 2025</strong>.</li>
             <li>📢 Parent–Teacher Meeting on <strong>20 Sept 2025</strong>.</li>
@@ -479,85 +557,44 @@
       </div>
     </section>
 
-<!-- ========================= 
-     NOTICE POPUP MODAL (ATTRACTIVE INLINE STYLE)
-========================== -->
-<div id="noticeModal" style="
-  display:none; position:fixed; z-index:2000;
-  left:0; top:0; width:100%; height:100%;
-  background:rgba(0,0,0,0.7);
-  display:flex; justify-content:center; align-items:center;
-">
-  <div style="
-    position:relative;
-    background:#fff;
-    padding:30px;
-    border-radius:16px;
-    max-width:520px;
-    width:92%;
-    box-shadow:0 15px 30px rgba(0,0,0,.3);
-    border:4px solid #f9a826;
-    animation: popIn 0.6s ease;
-    text-align:center;
-  ">
-    <span id="closeNotice" style="
-      position:absolute; top:16px; right:22px;
-      font-size:28px; font-weight:bold; color:#444;
-      cursor:pointer; transition:0.3s;
-    ">&times;</span>
-
-    <h2 style="
-      margin-bottom:18px;
-      font-size:1.8rem;
-      color:#d32f2f;
-      font-weight:bold;
-      text-shadow:0 0 8px rgba(255,0,0,0.7);
-      animation: blink 1.2s infinite;
-    ">
-      📢 Notice Board
-    </h2>
-
-    <ul style="
-      list-style:none; padding:0; margin:0; text-align:left;
-    ">
-      <li style="padding:10px 0; border-bottom:1px solid #ddd; font-size:1.05rem;">
-        🎓 Admissions (2025–26) open from <strong style='color:#2e7d32;'>10 Sept 2025</strong>.
-      </li>
-      <li style="padding:10px 0; border-bottom:1px solid #ddd; font-size:1.05rem;">
-        👨‍👩‍👧 Parent–Teacher Meeting on <strong style='color:#1976d2;'>20 Sept 2025</strong>.
-      </li>
-      <li style="padding:10px 0; border-bottom:1px solid #ddd; font-size:1.05rem;">
-        🏆 Annual Sports Day on <strong style='color:#e65100;'>15 Nov 2025</strong>.
-      </li>
-      <li style="padding:10px 0; font-size:1.05rem;">
-        💰 Scholarship application deadline: <strong style='color:#6a1b9a;'>31 Aug 2025</strong>.
-      </li>
-    </ul>
-  </div>
-</div>
+    <!-- ========================= 
+         NOTICE POPUP MODAL
+    ========================== -->
+    <div id="noticeModal">
+      <div class="modal-content">
+        <span class="close-notice" id="closeNotice">&times;</span>
+        <h2 class="modal-title">📢 Notice Board</h2>
+        <ul class="modal-list">
+          <li>🎓 Admissions (2025–26) open from <strong style='color:#2e7d32;'>10 Sept 2025</strong>.</li>
+          <li>👨‍👩‍👧 Parent–Teacher Meeting on <strong style='color:#1976d2;'>20 Sept 2025</strong>.</li>
+          <li>🏆 Annual Sports Day on <strong style='color:#e65100;'>15 Nov 2025</strong>.</li>
+          <li>💰 Scholarship application deadline: <strong style='color:#6a1b9a;'>31 Aug 2025</strong>.</li>
+        </ul>
+      </div>
+    </div>
 
     <!-- =========================
          EVENTS
     ========================== -->
     <section id="events" aria-labelledby="events-title">
       <div class="container">
-        <h2 class="section-title" id="events-title">Upcoming Events</h2>
-        <p class="section-subtitle">Join our vibrant calendar that celebrates knowledge, culture and sportsmanship.</p>
+        <h2 class="section-title" id="events-title" data-aos="fade-up">Upcoming Events</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Join our vibrant calendar that celebrates knowledge, culture and sportsmanship.</p>
 
         <div class="events-grid">
-          <article class="event">
+          <article class="event" data-aos="fade-up" data-aos-delay="200">
             <span class="date">25 Oct 2025 • 10:00 AM</span>
             <h3>Science Exhibition</h3>
             <p>Innovative models & demos by students across classes.</p>
           </article>
 
-          <article class="event">
+          <article class="event" data-aos="fade-up" data-aos-delay="300">
             <span class="date">10 Dec 2025 • 2:00 PM</span>
             <h3>Cultural Fest</h3>
             <p>Music, dance and drama showcasing diverse heritage.</p>
           </article>
 
-          <article class="event">
+          <article class="event" data-aos="fade-up" data-aos-delay="400">
             <span class="date">15 Jan 2026 • 9:00 AM</span>
             <h3>Annual Sports Meet</h3>
             <p>Three-day inter-house athletics and team events.</p>
@@ -571,26 +608,26 @@
     ========================== -->
     <section id="team" aria-labelledby="team-title">
       <div class="container">
-        <h2 class="section-title" id="team-title">Our Teaching Staff</h2>
-        <p class="section-subtitle">Experienced, caring educators committed to student success.</p>
+        <h2 class="section-title" id="team-title" data-aos="fade-up">Our Teaching Staff</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Experienced, caring educators committed to student success.</p>
 
         <div class="team-grid">
-          <div class="member">
+          <div class="member" data-aos="fade-up" data-aos-delay="200">
             <img src="images/headmaster.jpg" alt="Mr. A. B. Roy">
             <h4>Mr. A. B. Roy</h4>
             <p class="role">Headmaster • M.A., B.Ed. • 20+ years</p>
           </div>
-          <div class="member">
+          <div class="member" data-aos="fade-up" data-aos-delay="300">
             <img src="images/teacher1.jpg" alt="Ms. S. K. Sen">
             <h4>Ms. S. K. Sen</h4>
             <p class="role">Science & Mathematics • M.Sc., B.Ed.</p>
           </div>
-          <div class="member">
+          <div class="member" data-aos="fade-up" data-aos-delay="400">
             <img src="images/teacher2.jpg" alt="Mr. D. Chatterjee">
             <h4>Mr. D. Chatterjee</h4>
             <p class="role">Arts & Social Studies • M.A., M.Phil.</p>
           </div>
-          <div class="member">
+          <div class="member" data-aos="fade-up" data-aos-delay="500">
             <img src="images/teacher3.jpg" alt="Mrs. P. Mukherjee">
             <h4>Mrs. P. Mukherjee</h4>
             <p class="role">Languages • M.A., B.Ed. (Bengali)</p>
@@ -604,23 +641,23 @@
     ========================== -->
     <section id="testimonials" aria-labelledby="testimonials-title">
       <div class="container">
-        <h2 class="section-title" id="testimonials-title">What Our Students Say</h2>
+        <h2 class="section-title" id="testimonials-title" data-aos="fade-up">What Our Students Say</h2>
         <div class="testi-grid">
-          <article class="testi">
+          <article class="testi" data-aos="fade-up" data-aos-delay="200">
             <img src="images/student1.jpg" alt="Rita Das">
             <div>
               <h5>Rita Das</h5>
               <span class="meta">Class X • 95% (Madhyamik)</span>
-              <p>“The lab facilities and dedicated teachers inspired me to pursue medical science. Practical learning made tough concepts click!”</p>
+              <p>"The lab facilities and dedicated teachers inspired me to pursue medical science. Practical learning made tough concepts click!"</p>
             </div>
           </article>
 
-          <article class="testi">
+          <article class="testi" data-aos="fade-up" data-aos-delay="300">
             <img src="images/student2.jpg" alt="Arjun Mukherjee">
             <div>
               <h5>Arjun Mukherjee</h5>
               <span class="meta">Class XII • Vocational</span>
-              <p>“The vocational program gave me real-world skills. Our teachers go beyond the syllabus to prepare us for careers.”</p>
+              <p>"The vocational program gave me real-world skills. Our teachers go beyond the syllabus to prepare us for careers."</p>
             </div>
           </article>
         </div>
@@ -632,31 +669,31 @@
     ========================== -->
     <section id="gallery" aria-labelledby="gallery-title">
       <div class="container">
-        <h2 class="section-title" id="gallery-title">School Moments</h2>
-        <p class="section-subtitle">Glimpses of life and learning on our campus.</p>
+        <h2 class="section-title" id="gallery-title" data-aos="fade-up">School Moments</h2>
+        <p class="section-subtitle" data-aos="fade-up" data-aos-delay="100">Glimpses of life and learning on our campus.</p>
 
         <div class="gallery">
-          <div class="g-item">
+          <div class="g-item" data-aos="zoom-in" data-aos-delay="200">
             <img src="images/G1.jpeg" alt="Classroom activity">
             <div class="g-overlay"><i class="fas fa-plus"></i></div>
           </div>
-          <div class="g-item">
+          <div class="g-item" data-aos="zoom-in" data-aos-delay="300">
             <img src="images/G2.jpg" alt="Science fair models">
             <div class="g-overlay"><i class="fas fa-plus"></i></div>
           </div>
-          <div class="g-item">
+          <div class="g-item" data-aos="zoom-in" data-aos-delay="400">
             <img src="images/sportsday.jpg" alt="Sports day race">
             <div class="g-overlay"><i class="fas fa-plus"></i></div>
           </div>
-          <div class="g-item">
+          <div class="g-item" data-aos="zoom-in" data-aos-delay="500">
             <img src="images/culturalday.jpg" alt="Cultural day performance">
             <div class="g-overlay"><i class="fas fa-plus"></i></div>
           </div>
-          <div class="g-item">
+          <div class="g-item" data-aos="zoom-in" data-aos-delay="600">
             <img src="images/library.jpg" alt="Students reading in library">
             <div class="g-overlay"><i class="fas fa-plus"></i></div>
           </div>
-          <div class="g-item">
+          <div class="g-item" data-aos="zoom-in" data-aos-delay="700">
             <img src="images/teacher-student.jpg" alt="Teacher guiding students">
             <div class="g-overlay"><i class="fas fa-plus"></i></div>
           </div>
@@ -668,10 +705,10 @@
          CTA
     ========================== -->
     <section id="admissions" class="container">
-      <div class="cta" role="complementary" aria-label="Admissions call to action">
+      <div class="cta" role="complementary" aria-label="Admissions call to action" data-aos="fade-up">
         <h2>Admissions Open for 2025–26 Academic Session</h2>
         <p>Join us for strong academics, caring mentorship, and opportunities in sports & culture. Limited seats for Classes V–XII.</p>
-        <a href="#contact" class="btn btn-outline">Contact Us Today</a>
+        <a href="#contact" class="btn btn-outline" data-aos="fade-up" data-aos-delay="200">Contact Us Today</a>
       </div>
     </section>
   </main>
@@ -681,7 +718,7 @@
   ========================== -->
   <footer id="contact" class="footer" aria-labelledby="contact-title">
     <div class="container footer-grid">
-      <div>
+      <div data-aos="fade-up" data-aos-delay="200">
         <h3 id="contact-title">About Us</h3>
         <p>Since 1952, Bhagabangola Government High School has nurtured young minds through academic excellence, values, and community spirit.</p>
         <div class="social" aria-label="Social media">
@@ -692,7 +729,7 @@
         </div>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="300">
         <h3>Quick Links</h3>
         <ul>
           <li><a href="#academics">Academics</a></li>
@@ -702,7 +739,7 @@
         </ul>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="400">
         <h3>Contact Information</h3>
         <p><i class="fas fa-map-marker-alt"></i> Bhagwangola, Murshidabad, WB 742135</p>
         <p><i class="fas fa-phone"></i> +91 1234567890</p>
@@ -710,7 +747,7 @@
         <p><i class="fas fa-clock"></i> Office Hours: 10:00 AM – 4:00 PM (Mon–Sat)</p>
       </div>
 
-      <div>
+      <div data-aos="fade-up" data-aos-delay="500">
         <h3>Send us a Message</h3>
         <form class="contact-form" onsubmit="event.preventDefault(); alert('Thank you! Your message has been received.'); this.reset();">
           <input type="text" name="name" placeholder="Your Name" required aria-label="Your Name">
@@ -732,30 +769,27 @@
   <!-- =========================
        SCRIPTS
   ========================== -->
-  <script>
-// Show popup on page load
-window.addEventListener('load', () => {
-  const modal = document.getElementById('noticeModal');
-  const closeBtn = document.getElementById('closeNotice');
+  <!-- AOS Library -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   
-  modal.style.display = 'flex'; // show popup
+  <script>
+    // Initialize AOS
+    AOS.init({
+      duration: 800,
+      once: true,
+      offset: 100
+    });
 
-  closeBtn.onclick = () => modal.style.display = 'none';
-  window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
-});
+    // Show popup on page load
+    window.addEventListener('load', () => {
+      const modal = document.getElementById('noticeModal');
+      const closeBtn = document.getElementById('closeNotice');
+      
+      modal.style.display = 'flex'; // show popup
 
-// Inject keyframes dynamically since inline styles don’t support @keyframes
-const styleSheet = document.createElement("style");
-styleSheet.innerHTML = `
-@keyframes blink {
-  0%, 50%, 100% {opacity:1;}
-  25%, 75% {opacity:0.4;}
-}
-@keyframes popIn {
-  from {opacity:0; transform:scale(0.8);}
-  to {opacity:1; transform:scale(1);}
-}`;
-document.head.appendChild(styleSheet);
+      closeBtn.onclick = () => modal.style.display = 'none';
+      window.onclick = (e) => { if (e.target === modal) modal.style.display = 'none'; };
+    });
 
     // Elements
     const navbar     = document.getElementById('navbar');
